@@ -1,0 +1,182 @@
+/* Création d'une police */
+@font-face {
+    font-family: "police_titre";
+    src: url(../font/GaMaamli-Regular.ttf);
+}
+
+/* L'entête de la page */
+header {
+    background-color: #2e544f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 93vh;
+}
+
+header h1 {
+    font-family: "police_titre";
+    margin: 0;
+    font-size: 2.5em;
+    color: #f0f0f0;
+}
+
+header img {
+    padding: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #f0f0f0;
+    padding: 8px 15px 8px 15px;
+    border-radius: 50px;
+    color: #2e544f;
+}
+
+/* Le corp de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* La section critiques */
+.post {
+    margin-bottom: 30px;
+}
+
+.post div,
+.post ul {
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post ul li {
+    padding: 20px;
+    margin: 20px;
+    font-size: 0.8em;
+    box-shadow: 1px 1px 15px #777676;
+}
+
+.post ul img {
+    width: 200px;
+    height: 100px;
+}
+
+.post div p {
+    background-color: #f0f0f0;
+    line-height: 30px;
+    padding: 40px;
+    box-shadow: 1px 1px 15px #777676;
+}
+
+/* La section Contact */
+#contact {
+    padding: 50px;
+}
+
+#contact fieldset {
+    background-color: #2e544f;
+    padding: 40px;
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+#contact input,
+textarea {
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    padding: 5px;
+    border-style: none;
+    border-bottom: solid 2px #f4f4f4;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contact input[type=submit] {
+    background-color: #bfbfbf;
+    color: #333;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px white;
+    margin-top: 10px;
+}
+
+#contact div {
+    text-align: right;
+}
+
+#contact h2 {
+    color: #f4f4f4;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+#contact fieldset legend {
+    color: #f0f0f0;
+    background-color: #2e544f;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Affichage téléphone */
+@media only screen and (max-width:768px) {
+    header {
+        height: 80vh;
+    }
+
+    nav ul {
+        position: relative;
+    }
+
+    nav ul li {
+        display: block;
+
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: underline;
+        background-color: transparent;
+
+
+    }
+
+    .post div,
+    .post ul {
+        flex-direction: column;
+    }
+}
